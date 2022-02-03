@@ -1,0 +1,56 @@
+// add fonts
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("/fonts/OpenSans-Regular.woff") format("woff2"),
+        url("/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("/fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Code Regular";
+    src: url("/fonts/SourceCode-Regular.woff2") format("woff2"),
+        url("/fonts/SourceCode-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Code Medium";
+    src: url("/fonts/SourceCode-Medium.woff2") format("woff2"),
+        url("/fonts/SourceCode-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// font mixins
+@mixin font-opensans-regular {
+    font-family: "Open Sans Regular", sans-serif;
+    font-weight: 400;
+}
+@mixin font-opensans-bold {
+    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
+}
+
+@mixin font-sourcode-regular {
+    font-family: "Source Code Regular", sans-serif;
+    font-weight: 400;
+}
+@mixin font-sourcode-medium {
+    font-family: "Source Code Medium", sans-serif;
+    font-weight: 500;
+}

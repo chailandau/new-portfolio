@@ -1,0 +1,9 @@
+html {
+    @include font-opensans-regular;
+    @include font(16, 0, 22);
+}
+
+.wrapper {
+    max-width: rem(1400);
+    padding: 0 rem(30);
+}
