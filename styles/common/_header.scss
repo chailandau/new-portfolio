@@ -1,7 +1,6 @@
 header {
     padding: rem(15) 0;
     h1 {
-        @include font-opensans-bold;
         @include font(36, 0, 40);
         color: $purple;
     }
