@@ -10,6 +10,11 @@ $rem: 16;
 // set base container size
 $container-width: rem(1400);
 
+// transitions
+@mixin basic-fade {
+    transition: all 250ms ease-in-out;
+}
+
 // font size, tracking, leading
 @mixin font($font-size, $tracking, $leading) {
     font-size: calc($font-size / $base-font-size) * 1rem;

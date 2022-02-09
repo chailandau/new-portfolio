@@ -1,7 +1,44 @@
 header {
-    padding: rem(15) 0;
-    h1 {
-        @include font(36, 0, 40);
-        color: $purple;
+    padding: rem(60) 0;
+    .wrapper {
+        @include desktop-sm {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+    .logo {
+        height: rem(40);
+    }
+    nav {
+        @include font-poppins-semibold;
+        @include font(20, 0, 30);
+        ul {
+            li {
+                display: inline-block;
+                margin-left: rem(60);
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &.active {
+                    background-color: $dark-pink;
+                    background-image: $pink-orange-1;
+                    background-size: 100%;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                }
+                a {
+                    color: $black;
+                    @include basic-fade;
+                    &:hover {
+                        color: $dark-pink;
+                    }
+                }
+            }
+        }
     }
 }

@@ -2,7 +2,31 @@ html {
     @include font(16, 0, 22);
 }
 
+.logo {
+    display: block;
+    svg {
+        height: 100%;
+        width: auto;
+    }
+}
+#logo-gradient {
+    .first-stop {
+        stop-color: $dark-pink;
+    }
+    .last-stop {
+        stop-color: $orange;
+    }
+}
+
 .wrapper {
     max-width: rem(1400);
     padding: 0 rem(30);
+    margin: auto;
+}
+
+ul.no-bullets,
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
