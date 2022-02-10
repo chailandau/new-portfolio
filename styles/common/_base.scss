@@ -30,3 +30,23 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
+.separator {
+    pointer-events: none;
+    @include font-firacode-semibold;
+    @include font(15, 0, 18);
+    background-color: $dark-pink;
+    background-image: $pink-orange-1;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    span {
+        white-space: nowrap;
+        &.line-2 {
+            margin-left: rem(-189);
+        }
+    }
+}
