@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 const VsCode = () => {
   return (
-    <div className="icon">
+    <div className="icon vs-code">
       <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="a" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
           <path fillRule="evenodd" clipRule="evenodd" d="M70.91 99.32c1.58.61 3.37.57 4.96-.2l20.6-9.9a6.25 6.25 0 0 0 3.53-5.63V16.4c0-2.4-1.38-4.59-3.54-5.63L75.87.88a6.23 6.23 0 0 0-7.1 1.2L29.36 38.04 12.19 25.01a4.16 4.16 0 0 0-5.32.24l-5.5 5a4.17 4.17 0 0 0-.01 6.17L16.25 50 1.35 63.58a4.17 4.17 0 0 0 .01 6.17l5.5 5a4.16 4.16 0 0 0 5.33.24l17.17-13.03 39.4 35.96c.63.62 1.36 1.09 2.15 1.4Zm4.1-72.02L45.12 50 75 72.7V27.3Z" fill="#fff"/>

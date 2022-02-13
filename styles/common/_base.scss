@@ -1,7 +1,10 @@
 html {
     @include font(16, 0, 22);
-    overflow-x: hidden;
     @include font-poppins-medium;
+}
+html,
+body {
+    overflow-x: hidden;
 }
 
 .logo {
@@ -52,7 +55,7 @@ nav ul {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     @include desktop-sm {
-        padding: rem(100) 0;
+        padding: rem(75) 0;
     }
     span {
         white-space: nowrap;
@@ -86,6 +89,10 @@ nav ul {
 
 .lg-title {
     @include font(40, 0, 65);
+}
+
+.section {
+    padding: rem(100) 0;
 }
 
 .intro {

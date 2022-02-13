@@ -3,7 +3,7 @@ import Arrow from "./svg/Arrow";
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <div className="intro section">
       <div className="wrapper wide">
         <p className="xl-title">
           <span>Hello, I’m Chai. I’m a </span>

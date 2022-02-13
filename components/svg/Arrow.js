@@ -1,8 +1,16 @@
+import { Link } from "react-scroll";
+
 /* eslint-disable max-len */
 const Arrow = () => {
   return (
     <div className="arrow">
-      <a href="">
+      <Link
+        to="tools"
+        smooth={true}
+        offset={50}
+        duration={750}
+        hashSpy={true}
+      >
         <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M42 2L22 20L2 2" stroke="url(#gradient2)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           <defs>
@@ -12,7 +20,9 @@ const Arrow = () => {
             </linearGradient>
           </defs>
         </svg>
-      </a>
+      
+      </Link>
+     
     </div>
   );
 };
