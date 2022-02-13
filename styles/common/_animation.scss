@@ -1,0 +1,11 @@
+@keyframes arrowBounce {
+    0% {
+        bottom: rem(40);
+    }
+    50% {
+        bottom: rem(45);
+    }
+    100% {
+        bottom: rem(40);
+    }
+}

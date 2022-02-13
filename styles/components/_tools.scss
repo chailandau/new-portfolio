@@ -1,0 +1,33 @@
+.tools {
+    .grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(
+                0,
+                1fr
+            );
+        grid-column-gap: rem(110);
+        grid-row-gap: rem(95);
+        margin-top: rem(95);
+
+        .tool-indiv {
+            position: relative;
+            padding-bottom: rem(50);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            svg {
+                height: rem(85);
+            }
+            span {
+                @include font(22, 0, 32);
+                display: block;
+                margin-top: rem(22);
+                position: absolute;
+                bottom: 0;
+            }
+            .vscode-mixblendmode {
+                mix-blend-mode: overlay;
+            }
+        }
+    }
+}

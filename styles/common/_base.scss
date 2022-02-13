@@ -1,5 +1,7 @@
 html {
     @include font(16, 0, 22);
+    overflow-x: hidden;
+    @include font-poppins-medium;
 }
 
 .logo {
@@ -9,19 +11,25 @@ html {
         width: auto;
     }
 }
-#logo-gradient {
-    .first-stop {
+#gradient,
+#gradient2 {
+    .dark-pink {
         stop-color: $dark-pink;
     }
-    .last-stop {
+    .orange {
         stop-color: $orange;
     }
 }
 
 .wrapper {
-    max-width: rem(1400);
-    padding: 0 rem(30);
+    max-width: rem(1465);
+    padding: 0 rem(300);
     margin: auto;
+    &.wide {
+        max-width: rem(1400);
+        padding: 0 rem(150);
+        margin: auto;
+    }
 }
 
 ul.no-bullets,
@@ -43,10 +51,68 @@ nav ul {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    @include desktop-sm {
+        padding: rem(100) 0;
+    }
     span {
         white-space: nowrap;
         &.line-2 {
             margin-left: rem(-189);
         }
     }
+}
+
+.xl-title {
+    @include font(50, 0, 75);
+    span {
+        &.gradient {
+            background-color: $dark-pink;
+            background-image: $pink-orange-1;
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        &.bold {
+            @include font-poppins-bold;
+        }
+        &.italic {
+            @include font-poppins-italic;
+        }
+    }
+}
+
+.lg-title {
+    @include font(40, 0, 65);
+}
+
+.intro {
+    height: calc(100vh - 100px);
+    margin-top: rem(-68);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .wrapper {
+        @include desktop-sm {
+            display: grid;
+            grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
+            grid-column-gap: rem(100);
+        }
+    }
+    span {
+        @include desktop-sm {
+            display: block;
+        }
+    }
+}
+
+.arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: rem(40);
+    animation: arrowBounce 1.5s infinite ease-in-out;
 }
