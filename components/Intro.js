@@ -1,5 +1,6 @@
 import FeaturedImage from "./FeaturedImage";
 import Arrow from "./svg/Arrow";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -13,7 +14,15 @@ const Intro = () => {
         </p>
         <FeaturedImage />
       </div>
-      <Arrow />
+      <Link
+        to="tools"
+        smooth={true}
+        offset={50}
+        duration={750}
+        hashSpy={true}
+      >
+        <Arrow />
+      </Link>
     </div>
   );
 };

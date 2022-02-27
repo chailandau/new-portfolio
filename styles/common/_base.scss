@@ -115,11 +115,13 @@ nav ul {
     }
 }
 
-.arrow {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: rem(40);
-    animation: arrowBounce 1.5s infinite ease-in-out;
+.intro {
+    .arrow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: rem(40);
+        animation: arrowBounce 1.5s infinite ease-in-out;
+    }
 }

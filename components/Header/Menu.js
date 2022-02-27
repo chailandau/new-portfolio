@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const Menu = () => {
   return (
     <>
-      <nav className="header-nav">
+      <nav>
         <ul>
           <li>
             <Link
