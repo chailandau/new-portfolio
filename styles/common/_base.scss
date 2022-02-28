@@ -26,12 +26,17 @@ body {
 
 .wrapper {
     max-width: rem(1465);
-    padding: 0 rem(300);
     margin: auto;
+    padding: 0 rem(30);
+    @include desktop-sm {
+        padding: 0 rem(300);
+    }
     &.wide {
         max-width: rem(1400);
-        padding: 0 rem(150);
         margin: auto;
+        @include desktop-sm {
+            padding: 0 rem(150);
+        }
     }
 }
 
@@ -66,7 +71,11 @@ nav ul {
 }
 
 .xl-title {
-    @include font(50, 0, 75);
+    @include font(27, 0, 42);
+    @include desktop-sm {
+        @include font(50, 0, 75);
+    }
+
     span {
         &.gradient {
             background-color: $dark-pink;
@@ -88,7 +97,10 @@ nav ul {
 }
 
 .lg-title {
-    @include font(40, 0, 65);
+    @include font(25, 0, 38);
+    @include desktop-sm {
+        @include font(40, 0, 65);
+    }
 }
 
 .section {

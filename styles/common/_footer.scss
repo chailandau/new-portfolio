@@ -1,13 +1,23 @@
 footer {
-    padding: rem(15) 0 rem(85) 0;
+    padding: rem(50) 0;
+    @include desktop-sm {
+        padding: rem(15) 0 rem(85) 0;
+    }
     .wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include desktop-sm {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
     }
 
     .left {
-        width: 50%;
         display: flex;
+        @include desktop-sm {
+            width: 50%;
+        }
         a {
             width: rem(70);
             padding: rem(25);

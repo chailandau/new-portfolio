@@ -6,8 +6,8 @@ const FeaturedImage = () => {
       <Image 
         src="/images/chai-headshot-web.jpg"
         alt="alt"
-        width="305"
-        height="400"
+        layout="fill" 
+        objectFit="cover"
       />
     </div>
   );
